@@ -7,6 +7,8 @@
         // Muss noch irgendwie fixxen, dass X hier immer als erstes angesehen wird
         // Ansonsten sind einfache Gleichungen mit einer Unbekannten schon möglich.
         // Klammer noch nicht
+
+        // a1 x + a2 = a3
         public decimal SolveEquation(decimal[] leftSide, decimal[] rightSide)
         {
             decimal result = 0;
@@ -36,9 +38,9 @@
                 {
                     result = rightSide[0];
                 }
-
             }
 
+            Console.WriteLine(Decimal.Round(result, 1));
             return Decimal.Round(result, 1);
         }
         public void SimplifyEquation()

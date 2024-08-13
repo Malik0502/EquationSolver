@@ -6,6 +6,8 @@ namespace EquationSolver
     {
         static void Main(string[] args)
         {
+            new UserInteraction().Menu();
+
             var container = BuilderStatus().Build();
             using (var scope = container.BeginLifetimeScope())
             {
