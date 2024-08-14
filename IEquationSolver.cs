@@ -4,6 +4,5 @@
     {
         decimal SolveEquation(decimal[] leftSide, decimal[] rightSide);
 
-        void SimplifyEquation();
     }
 }
